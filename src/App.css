@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.input-field {
+  width: 35%;
+  height: auto;
+  position: relative;
+}
+.input-field input {
+  width: 100% !important;
+  color: white;
+  caret-color: rgb(0, 0, 0);
+}
+
+.input-field .fake {
+  width: 100%;
+  text-align: left;
+  color: rgb(19, 19, 19);
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translate(-1%, -50%);
+  pointer-events: none;
+  font-size: 0.8rem;
+}
+
+.input-field .fake .tomato {
+  color: tomato !important;
+}
+
+.input-field .hints {
+  position: absolute;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 10px;
+}
+
+.input-field .hints li {
+  list-style: none;
+  font-size: 0.78rem;
+  margin: 0;
+  width: 100%;
+  text-align: left !important;
+}
